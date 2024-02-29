@@ -22,7 +22,8 @@ sdist/
 var/
 *.egg-info/
 .installed.cfg
-*.egg
+*.egg'
+venv
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -83,11 +84,16 @@ target/
 *.swp
 *.swo
 
-# Mypy cache
+# Caches
 .mypy_cache/
-
-# pytest cache
 .pytest_cache/
+.ruff_cache/
 
 # Hydra logs
 outputs
+
+# Data
+data/*/*
+
+# Notebooks
+notebooks/*
