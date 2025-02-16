@@ -1,22 +1,9 @@
-.PHONY: tests docs
+.PHONY: install
 
-deps: 
-	@echo "Initializing Git..."
-	git init
-	{% if cookiecutter.dependency_manager == "poetry" %}
+install: 
 	@echo "Installing dependencies..."
 	poetry install --no-root
-	poetry run pre-commit install
-	{% else %}
-	@echo "Installing dependencies..."
-	pip install -r requirements.txt
-	pre-commit install
-	{% endif %}
-tests:
-	pytest
 
-docs:
-	@echo Save documentation to docs... 
-	pdoc src -o docs --force
-	@echo View API documentation... 
-	pdoc src --http localhost:8080	
+activate:
+	@echo "Activating virtual environment..."
+	poetry shell
