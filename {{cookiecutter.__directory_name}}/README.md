@@ -16,3 +16,15 @@ make install
 ```bash
 make activate
 ```
+
+## Run the pipeline
+
+```bash
+make run-pipeline
+```
+
+## Run one stage
+
+```bash
+dvc repro <stage_name>
+```

@@ -1,0 +1,9 @@
+stages:
+
+  # Data processing
+  01_process:
+    cmd: python src/01_process.py
+
+  # Training
+  02_train:
+    cmd: python src/02_train.py

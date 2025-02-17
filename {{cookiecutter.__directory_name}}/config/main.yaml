@@ -1,7 +1,8 @@
 defaults:
-  - process: process1
-  - model: model1
+  - process: process_v1
+  - train: train_v2
   - _self_
+
 
 data:
   raw: data/raw/sample.csv

@@ -7,3 +7,8 @@ install:
 activate:
 	@echo "Activating virtual environment..."
 	poetry shell
+
+run-pipeline:
+	@echo "Running DVC..."
+	dvc repro
+
